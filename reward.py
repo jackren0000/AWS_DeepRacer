@@ -15,10 +15,17 @@ def reward_function(params):
     # Give higher reward if the speed is fast!
   
     if distance_from_center <= marker_1:
-      if 
-        reward = 1.0
+        if speed >= 0.8:
+            reward = 1.0
+        else:
+            reward = 0.75
+
     elif distance_from_center <= marker_2:
-        reward = 0.5
+        if speed >= 0.8:
+            reward = 0.5
+        else:
+            reward = 0.35
+            
     elif distance_from_center <= marker_3:
         reward = 0.1
     else:
