@@ -1,0 +1,3 @@
+############## Following are the articles which are useful for reinforcement learning
+
+Markov Decision Process https://sanchittanwar75.medium.com/markov-chains-and-markov-decision-process-e91cda7fa8f2
