@@ -1,3 +1,5 @@
+from math import atan2, pi
+
 def reward_function(params):
     # Example of rewarding the agent to follow center line
 
@@ -10,7 +12,7 @@ def reward_function(params):
     closest_waypoint1, closest_waypoint2 = params['closest_waypoints']
     x1, y1 = params['waypoints'][closest_waypoint1]
     x2, y2 = params['waypoints'][closest_waypoint2]
-    angle = 90 - atan2(y2 - y1, x2 - x1) * 180 / print
+    angle = abs(90 - atan2(y2 - y1, x2 - x1) * 180 / pi)
  
 
     # Calculate 3 markers that are at varying distances away from the center line
@@ -40,6 +42,6 @@ def reward_function(params):
 
     # Help robot to turn at the U-turn
     if abs(heading - angle) > 15:
-        reward * 0.8
+        reward *= 0.8
 
     return float(reward)
