@@ -25,13 +25,10 @@ def reward_function(params):
     DIRECTION_THRESHOLD = 10.0
     ABS_STEERING_THRESHOLD = 30
 
-    ########################
-    ### Input parameters ###
-    ########################
     on_track = params['all_wheels_on_track']
     distance_from_center = params['distance_from_center']
     track_width = params['track_width']
-    steering = abs(params['steering_angle']) # Only need the absolute steering angle for calculations
+    steering_angle = abs(params['steering_angle']) # Only need the absolute steering angle for calculations
     speed = params['speed']
     waypoints = params['waypoints']
     closest_waypoints = params['closest_waypoints'] 
@@ -39,14 +36,6 @@ def reward_function(params):
 
     # negative exponential penalty
     reward = math.exp(-6 * distance_from_center)
-
-    ########################
-    ### Helper functions ###
-    ########################
-
-    ########################
-    ### Reward functions ###
-    ########################
 
     def on_track_reward(current_reward, on_track):
         if not on_track:
