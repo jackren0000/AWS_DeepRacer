@@ -5,4 +5,4 @@ attempt model-name time issues soultions
 
 2. attempt-02-03 04:13
 (1. same issue as before, u turn is a little better. 2. speed is too slow.)
-(1. retrain the robot to follow the central line.)
+(1. retrain the robot to follow the central line. 2. increase the speed.)
