@@ -1,4 +1,8 @@
 attempt model-name time issues soultions
 1 attempt-02-clone-clone 04:09
 (1. Robot can't turn when meet big U-turn. 2. Robot didn't follow the path at the end of the circle.) 
-(1. retrain the robot to follow the central line)
+(1. retrain the robot to follow the central line.)
+
+2. attempt-02-03 04:13
+(1. same issue as before, u turn is a little better. 2. speed is too slow.)
+(1. retrain the robot to follow the central line.)
